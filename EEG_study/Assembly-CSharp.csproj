@@ -95,6 +95,10 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
     <Compile Include="Assets/Scripts/SoundManager.cs" />
     <Compile Include="Assets/Scripts/WriteCSV.cs" />
+    <Compile Include="Assets/Scripts/Stimulus_tree_scripts/Tree_CC/Tree_congruent.cs" />
+    <Compile Include="Assets/Scripts/Stimulus_tree_scripts/Tree_CI/Tree_incongruent.cs" />
+    <Compile Include="Assets/Scripts/Stimulus_tree_scripts/Tree_CC/Audio_Tree_CC.cs" />
+    <Compile Include="Assets/Scripts/Stimulus_tree_scripts/Tree_CI/Audio_tree_CI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

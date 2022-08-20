@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player_movement : MonoBehaviour
 {
 
@@ -13,12 +14,16 @@ public class Player_movement : MonoBehaviour
     [SerializeField]
     public float _turnSpeed = 2f;
 
+    private Vector3[] _startposition = { new Vector3(279.9f, 22.02f, 590.1f), new Vector3(558.2f, 18.85f, 216.2f), new Vector3(758.57f, 20.22f, 686.02f) };
 
     // Start is called before the first frame update
     void Start()
     {
-        // sets first position
-        transform.position = new Vector3(305.76f, 22.02f, 463.95f);
+        // randomised start position
+        int index = Random.Range(0, 2);
+        Vector3 position = _startposition[index];
+        // set start position
+        transform.position = position;
     }
 
     // Update is called once per frame
